@@ -1,0 +1,6 @@
+---
+# install_nfs_client_packages/vars/vars_Debian.yml
+
+# packages to be installed
+nfs_client_packages:
+  - 'nfs-common'
