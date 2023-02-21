@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-install_nfs_client_packages/workflows/Ansible%20Lint/badge.svg)
+
 install_nfs_client_packages
 =========
 
