@@ -2,12 +2,12 @@
 # install_nfs_client_packages/tasks/main.yml
 
 - name: 'Load variables'
-  include_vars: "{{ item }}"
+  ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - "vars_{{ ansible_distribution }}.yml"
     - "vars_{{ ansible_os_family }}.yml"
 
 - name: 'Install NFS client packages'
-  package:
+  ansible.builtin.package:
     name: "{{ nfs_client_packages }}"
     state: 'present'
